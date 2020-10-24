@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/anjasoft-se/static/css/main.ab7136cd.chunk.css",
+    "main.js": "/anjasoft-se/static/js/main.ff5c4955.chunk.js",
+    "main.js.map": "/anjasoft-se/static/js/main.ff5c4955.chunk.js.map",
+    "runtime-main.js": "/anjasoft-se/static/js/runtime-main.dec8e71a.js",
+    "runtime-main.js.map": "/anjasoft-se/static/js/runtime-main.dec8e71a.js.map",
+    "static/js/2.37b2a9fc.chunk.js": "/anjasoft-se/static/js/2.37b2a9fc.chunk.js",
+    "static/js/2.37b2a9fc.chunk.js.map": "/anjasoft-se/static/js/2.37b2a9fc.chunk.js.map",
+    "static/js/3.08645551.chunk.js": "/anjasoft-se/static/js/3.08645551.chunk.js",
+    "static/js/3.08645551.chunk.js.map": "/anjasoft-se/static/js/3.08645551.chunk.js.map",
+    "index.html": "/anjasoft-se/index.html",
+    "static/css/main.ab7136cd.chunk.css.map": "/anjasoft-se/static/css/main.ab7136cd.chunk.css.map",
+    "static/js/2.37b2a9fc.chunk.js.LICENSE.txt": "/anjasoft-se/static/js/2.37b2a9fc.chunk.js.LICENSE.txt",
+    "static/media/logo.103b5fa1.svg": "/anjasoft-se/static/media/logo.103b5fa1.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.dec8e71a.js",
+    "static/js/2.37b2a9fc.chunk.js",
+    "static/css/main.ab7136cd.chunk.css",
+    "static/js/main.ff5c4955.chunk.js"
+  ]
+}
