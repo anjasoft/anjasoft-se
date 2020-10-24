@@ -1,9 +1,11 @@
 {
-  "homepage":"http://anjasoft.github.io/anjasoft-se",
+  "homepage": "http://anjasoft.github.io/anjasoft-se",
   "name": "anjasoft-se",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@material-ui/core": "^4.11.0",
+    "@material-ui/icons": "^4.9.1",
     "@testing-library/jest-dom": "^5.11.5",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",

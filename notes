@@ -1,0 +1,2 @@
+#to deploy website: 
+npm run deploy 
