@@ -19,7 +19,7 @@
   .discreet-link:active{
     color: rgb(116, 116, 116);
   }
-  
+
   .txt-light {
     color: rgb(44, 44, 44);
   }
@@ -47,10 +47,10 @@
     margin-top:6rem;
     margin-bottom: 3rem;
   }
-  
+
   /* Hero
   –––––––––––––––––––––––––––––––––––––––––––––––––– */
-  
+
   .hero-image-container {
     perspective: 250px;
   }
@@ -61,14 +61,12 @@
 
   .hero-image {
     max-width: 70%;
-    position: relative;
-    display: block;
     margin-left:auto;
     margin-right: auto;
-    margin-top: 4rem;   
   }
 
-  
+
+
   /* Values
   –––––––––––––––––––––––––––––––––––––––––––––––––– */
   .green-background {
@@ -82,7 +80,7 @@
   .values img {
     max-height: 4rem;
   }
- 
+
   .value-heading {
     margin-bottom: .3rem;
   }
@@ -90,23 +88,23 @@
     opacity: .8;
     font-weight: 300;
   }
-  
+
   /* Help
   –––––––––––––––––––––––––––––––––––––––––––––––––– */
   .get-help {
     border-bottom: 1px solid #ddd;
   }
-  
+
   /* Categories
   –––––––––––––––––––––––––––––––––––––––––––––––––– */
   .categories {
     background-size: cover;
     color: #fff;
   }
-  .categories .section-description { 
+  .categories .section-description {
     margin-bottom: 4rem;
   }
-  
+
   /* Bigger than 550 */
   @media (min-width: 550px) {
     .section {
@@ -117,6 +115,12 @@
       text-align: left;
       height: 165px;
     }
+
+    .hero-logo {
+      margin-top: 3rem;
+    }
+
+
     .phone {
       position: absolute;
       top: -7rem;
@@ -139,10 +143,12 @@
 
     .hero-image {
       max-width: 80%;
-      margin-top: 0.5rem;
-      transform: rotateY(-15deg); 
-      margin-left: auto;
+      transform: rotateY(-15deg);
+      margin-right: 0px;
+      margin-top:1rem;
     }
+
+
 
     .hero-logo {
       max-width: 80%;
@@ -158,7 +164,7 @@
     }
 
   }
-  
+
   /* Bigger than 750 */
   @media (min-width: 750px) {
     .hero {
@@ -193,9 +199,8 @@
 
     .hero-image {
       max-width: 70%;
-      margin-top: 0.5rem;
-      transform: rotateY(-15deg); 
-      margin-left: auto;      
+      transform: rotateY(-15deg);
+      margin-left: auto;
     }
 
     .hero-logo {
@@ -212,28 +217,24 @@
     }
 
   }
-  
+
   /* Bigger than 1000 */
   @media (min-width: 1000px) {
     .section {
       padding: 20rem 0 19rem;
     }
-    .hero {
-      padding: 22rem 0;
-    }
+
+    
+   
     .hero-heading {
       font-size: 3.0rem;
     }
-    
-    .hero-image {
-        max-width: 65%;
-        margin-top: -1rem;
-        transform: rotateY(-15deg); 
-        margin-left: auto;        
-    }
+
+    .hero-image{max-width: 60%;}
 
     .hero-logo {
       max-width: 70%;
+      margin-top: 4rem;
     }
 
     .values img {
@@ -245,9 +246,9 @@
       margin-bottom: 3rem;
     }
 
-    
 
-    
 
-    
+
+
+
   }

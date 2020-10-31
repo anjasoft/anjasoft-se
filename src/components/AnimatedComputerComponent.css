@@ -1,0 +1,30 @@
+.computerContainer{
+    max-width: 50%;
+}
+
+.darkBlue{
+    stroke:#3b708e;
+  }
+  .lightBlue{
+    stroke:#55c1c1;
+  }
+.white{
+  stroke: #ecebeb;
+}
+
+.yellow{
+    stroke:#ffc754;
+  }
+.red{
+  stroke:rgba(255, 22, 22, 0.836);
+}
+  
+
+.line {
+    fill:none;
+    stroke-miterlimit:10;
+    stroke-width:3px;
+    stroke-linecap:round;
+    
+  }
+
