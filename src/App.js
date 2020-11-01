@@ -1,4 +1,4 @@
-import React from 'react';
+import React , { useState } from 'react';
 // import './css/skeleton.css';
 // import './css/normalize.css';
 // import './css/custom.css';
@@ -7,7 +7,10 @@ import logo_white_bg from  './images/logo_white_bg.svg';
 import toolImage from './images/tool.svg';
 import garbageImage from './images/garbage.svg';
 import bitcoinImage from './images/bitcoin.svg';
-import HeroSection from './components/HeroSection';
+
+
+import HeroSection from './components/HeroSection/HeroSection';
+import Header from './components/Header/Header';
 // import ValuePropositionSection from './components/ValuePropositionSectionComponent'
 // import ContactSection from './components/ContactSectionComponent';
 // import StuffSection from './components/StuffSectionComponent';
@@ -16,6 +19,7 @@ import HeroSection from './components/HeroSection';
 
 function App() {
 
+  const [activeLanguage, updateActiveLanguage] = useState("swe");
   const content = {
     SiteLogo: logo_white_bg,
     // courtesy of https://lukaszadam.com/illustrations
@@ -33,14 +37,18 @@ function App() {
   // const fooasProxy = new FoaasProxy();
 
 
+
   return (
-  <div className="container">
+  <>
+    <Header activeLanguage={activeLanguage} changeLanguage={(l)=> {console.log("change language: "+l); updateActiveLanguage(l);} }></Header>
+    <div className="container">
     <HeroSection greeting={content.MainGreetingMessage} logo={content.SiteLogo}></HeroSection>
     {/* <ValuePropositionSection valuePropositions={content.ValuePropositions}></ValuePropositionSection>
     <ContactSection title={content.ContactTitle} text={content.ContactText} buttonText={content.ContactButtonText}></ContactSection>
     <StuffSection></StuffSection>
     <FooterSection foaasProxy={fooasProxy}></FooterSection> */}
   </div>
+  </>
   );
 }
 
