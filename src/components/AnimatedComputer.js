@@ -1,11 +1,11 @@
 import React from 'react';
-import './AnimatedComputerComponent.css';
+import css from '../css/AnimatedComputer.module.css';
 
 const _colorClassNames = ["yellow", "darkBlue", "white", "lightBlue", "white"];
 
 function GetRandomColor(){
     
-    if(getRndInteger(0,99)!= 0)
+    if(getRndInteger(0,99)!== 0)
     {
     let clr = _colorClassNames[getRndInteger(0, _colorClassNames.length)];
     return clr;
@@ -29,7 +29,7 @@ export default function AnimatedComputer(props) {
     const doubleLineSeparation = "800ms";
 
     return (
-        <div className={props.cssClasses}>
+        <div className={css.animatedComputer}>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 167.58 117.5">
                 <defs>
                     <style>
@@ -73,7 +73,7 @@ export default function AnimatedComputer(props) {
                         <rect className="cls-7" x="2.58" y="2.63" width="162.41" height="112.24" rx="6" transform="translate(0.1 -0.14) rotate(0.1)" />
                         <line className="cls-8" x1="2.65" y1="18.65" x2="165.91" y2="18.92" />
 
-                        <line id="line1" className="yellow line" x1="20.46" y1="22" x2="90" y2="22" visibility="hidden">
+                        <line id="line1" className={`${css.yellow} ${css.line}`} x1="20.46" y1="22" x2="90" y2="22" visibility="hidden">
                             <animate id="line1start" 
                                 attributeName="visibility" 
                                 from="hidden" 
@@ -104,7 +104,7 @@ export default function AnimatedComputer(props) {
                                 fill="freeze" /> 
                         </line>
 
-                        <line id="line2" className={GetRandomColor()+" line"} x1="20.46" y1="22" x2="60" y2="22" visibility="hidden">
+                        <line id="line2" className={`${css.[GetRandomColor()]} ${css.line}`} x1="20.46" y1="22" x2="60" y2="22" visibility="hidden">
                             <animate id="line2start" 
                                 attributeName="visibility" 
                                 from="hidden" 
@@ -135,7 +135,7 @@ export default function AnimatedComputer(props) {
                                 fill="freeze" /> 
                         </line>
 
-                        <line id="line2b" className={GetRandomColor() + " line"} x1="72" y1="22" x2="78" y2="22" visibility="hidden">
+                        <line id="line2b" className={`${css.[GetRandomColor()]} ${css.line}`} x1="72" y1="22" x2="78" y2="22" visibility="hidden">
                             <animate id="line2bstart" 
                                 attributeName="visibility" 
                                 from="hidden" 
@@ -166,7 +166,7 @@ export default function AnimatedComputer(props) {
                                 fill="freeze" /> 
                         </line>
 						
-                        <line id="line3" className={GetRandomColor() + " line"} x1="20.46" y1="22" x2="68.2" y2="22" visibility="hidden">
+                        <line id="line3" className={ `${css.[GetRandomColor()]} ${css.line}`} x1="20.46" y1="22" x2="68.2" y2="22" visibility="hidden">
                             <animate id="line3start" 
                                 attributeName="visibility" 
                                 from="hidden" 
@@ -197,7 +197,7 @@ export default function AnimatedComputer(props) {
                                 fill="freeze" /> 
                         </line>
 
-                        <line id="line3b" className={GetRandomColor() + " line"} x1="79" y1="22" x2="90" y2="22" visibility="hidden">
+                        <line id="line3b" className={ `${css.[GetRandomColor()]} ${css.line}`} x1="79" y1="22" x2="90" y2="22" visibility="hidden">
                             <animate id="line3bstart" 
                                 attributeName="visibility" 
                                 from="hidden" 
@@ -228,7 +228,7 @@ export default function AnimatedComputer(props) {
                                 fill="freeze" /> 
                         </line>
 						
-						<line id="line4" className={GetRandomColor() + " line"} x1="20.46" y1="22" x2="50" y2="22" visibility="hidden">
+						<line id="line4" className={ `${css.[GetRandomColor()]} ${css.line}`} x1="20.46" y1="22" x2="50" y2="22" visibility="hidden">
                             <animate id="line4start" 
                                 attributeName="visibility" 
                                 from="hidden" 
@@ -259,7 +259,7 @@ export default function AnimatedComputer(props) {
                                 fill="freeze" /> 
                         </line>
 
-                        <line id="line6" className="yellow line" x1="20.46" y1="22" x2="94" y2="22" visibility="hidden">
+                        <line id="line6" className={`${css.yellow} ${css.line}`} x1="20.46" y1="22" x2="94" y2="22" visibility="hidden">
                             <animate id="line6start" 
                                 attributeName="visibility" 
                                 from="hidden" 
@@ -290,7 +290,7 @@ export default function AnimatedComputer(props) {
                                 fill="freeze" /> 
                         </line>
 
-                        <line id="line7" className={GetRandomColor() + " line"} x1="20.46" y1="22" x2="73" y2="22" visibility="hidden">
+                        <line id="line7" className={ `${css.[GetRandomColor()]} ${css.line}`} x1="20.46" y1="22" x2="73" y2="22" visibility="hidden">
                             <animate id="line7start" 
                                 attributeName="visibility" 
                                 from="hidden" 
@@ -321,7 +321,7 @@ export default function AnimatedComputer(props) {
                                 fill="freeze" /> 
                         </line>
 
-						<line id="line8" className={GetRandomColor() + " line"} x1="20.46" y1="22" x2="57" y2="22" visibility="hidden">
+						<line id="line8" className={ `${css.[GetRandomColor()]} ${css.line}`} x1="20.46" y1="22" x2="57" y2="22" visibility="hidden">
                             <animate id="line8start" 
                                 attributeName="visibility" 
                                 from="hidden" 
@@ -352,7 +352,7 @@ export default function AnimatedComputer(props) {
                                 fill="freeze" /> 
                         </line>
 
-                        <line id="line8b" className={GetRandomColor() + " line"} x1="67" y1="22" x2="81" y2="22" visibility="hidden">
+                        <line id="line8b" className={ `${css.[GetRandomColor()]} ${css.line}`} x1="67" y1="22" x2="81" y2="22" visibility="hidden">
                             <animate id="line8bstart" 
                                 attributeName="visibility" 
                                 from="hidden" 
@@ -383,7 +383,7 @@ export default function AnimatedComputer(props) {
                                 fill="freeze" /> 
                         </line>
 						
-                        <line id="line9" className={GetRandomColor() + " line"} x1="20.46" y1="22" x2="61" y2="22" visibility="hidden">
+                        <line id="line9" className={ `${css.[GetRandomColor()]} ${css.line}`} x1="20.46" y1="22" x2="61" y2="22" visibility="hidden">
                             <animate id="line9start" 
                                 attributeName="visibility" 
                                 from="hidden" 
@@ -414,7 +414,7 @@ export default function AnimatedComputer(props) {
                                 fill="freeze" /> 
                         </line>
 						
-                        <line id="line10" className={GetRandomColor() + " line"} x1="20.46" y1="22" x2="65" y2="22" visibility="hidden">
+                        <line id="line10" className={ `${css.[GetRandomColor()]} ${css.line}`} x1="20.46" y1="22" x2="65" y2="22" visibility="hidden">
                             <animate id="line10start" 
                                 attributeName="visibility" 
                                 from="hidden" 
@@ -445,7 +445,7 @@ export default function AnimatedComputer(props) {
                                 fill="freeze" /> 
                         </line>
 
-                        <line id="line10b" className={GetRandomColor() + " line"} x1="72" y1="22" x2="90" y2="22" visibility="hidden">
+                        <line id="line10b" className={ `${css.[GetRandomColor()]} ${css.line}`} x1="72" y1="22" x2="90" y2="22" visibility="hidden">
 						<animate id="line10bstart" 
                                 attributeName="visibility" 
                                 from="hidden" 
@@ -476,7 +476,7 @@ export default function AnimatedComputer(props) {
                                 fill="freeze" /> 
                         </line>
 						
-						<line id="line11" className="yellow line" x1="20.46" y1="22" x2="99" y2="22" visibility="hidden">
+						<line id="line11" className={`${css.yellow} ${css.line}`} x1="20.46" y1="22" x2="99" y2="22" visibility="hidden">
                             <animate id="line11start" 
                                 attributeName="visibility" 
                                 from="hidden" 
@@ -507,7 +507,7 @@ export default function AnimatedComputer(props) {
                                 fill="freeze" /> 
                         </line>
 						
-						<line id="line12" className={GetRandomColor() + " line"} x1="20.46" y1="22" x2="35" y2="22" visibility="hidden">
+						<line id="line12" className={ `${css.[GetRandomColor()]} ${css.line}`} x1="20.46" y1="22" x2="35" y2="22" visibility="hidden">
                             <animate id="line12start" 
                                 attributeName="visibility" 
                                 from="hidden" 
@@ -538,7 +538,7 @@ export default function AnimatedComputer(props) {
                                 fill="freeze" /> 
                         </line>
 						
-						<line id="line13" className={GetRandomColor() + " line"} x1="46" y1="22" x2="72" y2="22" visibility="hidden">
+						<line id="line13" className={ `${css.[GetRandomColor()]} ${css.line}`} x1="46" y1="22" x2="72" y2="22" visibility="hidden">
                             <animate id="line13start" 
                                 attributeName="visibility" 
                                 from="hidden" 
@@ -569,7 +569,7 @@ export default function AnimatedComputer(props) {
                                 fill="freeze" /> 
                         </line>
 						
-						<line id="line14" className={GetRandomColor() + " line"} x1="20.46" y1="22" x2="66" y2="22" visibility="hidden">
+						<line id="line14" className={ `${css.[GetRandomColor()]} ${css.line}`} x1="20.46" y1="22" x2="66" y2="22" visibility="hidden">
                             <animate id="line14start" 
                                 attributeName="visibility" 
                                 from="hidden" 
@@ -600,7 +600,7 @@ export default function AnimatedComputer(props) {
                                 fill="freeze" /> 
                         </line>				
 						
-						<line id="line15" className={GetRandomColor() + " line"} x1="76" y1="22" x2="89" y2="22" visibility="hidden">
+						<line id="line15" className={ `${css.[GetRandomColor()]} ${css.line}`} x1="76" y1="22" x2="89" y2="22" visibility="hidden">
                             <animate id="line15start" 
                                 attributeName="visibility" 
                                 from="hidden" 
@@ -631,7 +631,7 @@ export default function AnimatedComputer(props) {
                                 fill="freeze" /> 
                         </line>
 						
-						<line id="line16" className={GetRandomColor() + " line"} x1="20.46" y1="22" x2="71" y2="22" visibility="hidden">
+						<line id="line16" className={ `${css.[GetRandomColor()]} ${css.line}`} x1="20.46" y1="22" x2="71" y2="22" visibility="hidden">
                             <animate id="line16start" 
                                 attributeName="visibility" 
                                 from="hidden" 
@@ -662,7 +662,7 @@ export default function AnimatedComputer(props) {
                                 fill="freeze" /> 
                         </line>
 						
-						<line id="line17" className={GetRandomColor() + " line"} x1="20.46" y1="22" x2="69" y2="22" visibility="hidden">
+						<line id="line17" className={ `${css.[GetRandomColor()]} ${css.line}`} x1="20.46" y1="22" x2="69" y2="22" visibility="hidden">
                             <animate id="line17start" 
                                 attributeName="visibility" 
                                 from="hidden" 
@@ -693,7 +693,7 @@ export default function AnimatedComputer(props) {
                                 fill="freeze" /> 
                         </line>
 
-                        <line id="line18" className={GetRandomColor() + " line"} x1="20.46" y1="22" x2="77" y2="22" visibility="hidden">
+                        <line id="line18" className={ `${css.[GetRandomColor()]} ${css.line}`} x1="20.46" y1="22" x2="77" y2="22" visibility="hidden">
                             <animate id="line18start" 
                                 attributeName="visibility" 
                                 from="hidden" 
@@ -724,7 +724,7 @@ export default function AnimatedComputer(props) {
                                 fill="freeze" /> 
                         </line>
 
-                        <line id="line19" className={GetRandomColor() + " line"} x1="20.46" y1="22" x2="28" y2="22" visibility="hidden">
+                        <line id="line19" className={ `${css.[GetRandomColor()]} ${css.line}`} x1="20.46" y1="22" x2="28" y2="22" visibility="hidden">
                             <animate id="line19start" 
                                 attributeName="visibility" 
                                 from="hidden" 

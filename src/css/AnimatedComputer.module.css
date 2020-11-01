@@ -1,0 +1,76 @@
+
+.animatedComputer{
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 550px) {
+
+  .animatedComputer{
+    width: 95%;
+    margin-right:0px;
+    perspective: 250px;
+  }
+
+  .animatedComputer svg{
+    transform: rotateY(-25deg);
+    transform-origin: right; 
+  }
+}
+
+@media (min-width: 750px) {
+
+  .animatedComputer{
+    width: 80%;
+  }
+
+  .animatedComputer svg{
+    transform: rotateY(-15deg);
+  }
+}
+
+@media (min-width: 1000px) {
+
+  .animatedComputer{
+    width: 75%;
+  }
+
+  
+}
+
+@media (min-width: 1200px) {
+
+  .animatedComputer{
+    width: 70%;
+  }
+
+ 
+}
+
+.darkBlue{
+    stroke:#3b708e;
+  }
+  .lightBlue{
+    stroke:#55c1c1;
+  }
+.white{
+  stroke: #ecebeb;
+}
+
+.yellow{
+    stroke:#ffc754;
+  }
+.red{
+  stroke:rgba(255, 22, 22, 0.836);
+}
+  
+
+.line {
+    fill:none;
+    stroke-miterlimit:10;
+    stroke-width:3px;
+    stroke-linecap:round;
+    
+  }
+
