@@ -1,5 +1,5 @@
 import React from 'react';
-import css from '../css/AnimatedComputer.module.css';
+import css from './AnimatedComputer.module.css';
 
 const _colorClassNames = ["yellow", "darkBlue", "white", "lightBlue", "white"];
 
